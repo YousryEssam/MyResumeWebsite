@@ -1,0 +1,313 @@
+/* Imports & Page */
+@import 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Itim&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+.Playwrite-regular-Font {
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    /* line-height: 24px; */
+}
+
+h2 {
+    font-size: 70px;
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+    margin-left: 20px;
+    /* animation : bounce 2s infinite; */
+}
+
+.idx {
+    font-family: 'Lato', sans-serif;
+
+    font-size: 30px;
+    padding-top: 30px;
+    margin-top: 40px;
+    padding-left: 15px;
+    margin-left: 2.5%;
+    color: #425BB5;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: "Playwrite GB S", 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-left: 5%;
+    color: #FF5733;
+}
+
+i {
+    font-size: 30px;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes enlarge {
+    0%, 100% {
+        transform: scale(1); /* Original size */
+    }
+    50% {
+        transform: scale(1.125); /* 1.5 times larger */
+    }
+}
+
+/* Navbar */
+
+nav>ul {
+    text-align: center;
+    display: inline;
+}
+
+nav>ul>li {
+    display: inline-block;
+    margin: 5px;
+}
+
+li>a {
+    padding: 5px;
+    margin: 10px;
+    color: black;
+    font-size: large;
+    text-decoration: none;
+}
+
+li>a:hover {
+    color: blue;
+    text-decoration: underline;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    border-bottom: 2px #adadad solid;
+}
+
+/* Home */
+.home {
+    background-image: url(/image/YousryPic2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.home>p {
+    font-size: 25px;
+}
+
+.home>h2 {
+    font-size: 85px;
+    padding-top: 1%;
+    padding-left: 5%;
+    color: #FFC300;
+    animation: none;
+}
+
+/* about */
+.about {
+    height: 700px;
+}
+
+#ProfilePic {
+    border-radius: 15%;
+    border: #425BB5 solid 3px;
+    float: right;
+    width: 25%;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+#ProfilePic:hover{
+    /* width: 30%; */
+    animation: enlarge 2s;
+}
+
+
+.about>p {
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#signature {
+    float: left;
+    padding-top: 30px;
+    margin-top: 30px;
+    padding-left: 30px;
+    margin-left: 30px;
+    width: 30%;
+}
+
+/* My Experience */
+.myExp {
+    /* height: 700px; */
+    background-color: #f3f3f3;
+    padding-bottom: 2%;
+}
+
+.expItem {
+    margin: 1.5%;
+    text-align: center;
+    border: #283747 solid 2px;
+
+}
+
+.dateP {
+    display: inline-block;
+    margin: 2%;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: black;
+}
+
+.dateP:hover {
+    color: #000000;
+    background-color: #425BB5;
+}
+
+.CompanyName {
+    font-size: 30px;
+    margin: 2%;
+}
+
+.CompanyName:hover {
+    color: red;
+}
+
+.jobTitle {
+    font-size: 22px;
+    margin: 1.5%;
+}
+
+.jobDescription {
+    font-size: 18px;
+    margin: 1%;
+    text-align: left;
+}
+/* My Projects  */
+.projects-images{
+    text-align: center;
+}
+.prj-img{
+    width: 20%;
+    margin: 3%;
+    padding: 1%;
+    /* border: 1px solid #425BB5; */
+}
+.prj-img:hover{
+    animation : bounce 2s infinite;
+    border: none;
+}
+/* Contact */
+.contact {
+    height: 700px;
+    background-color: #f3f3f3;
+}
+
+.contact-info {
+    display: inline;
+    float: left;
+    width: 35%;
+}
+
+.contact-title {
+    font-size: 20px;
+    font-family: "Playwrite GB S", 'Playfair Display', serif;
+    margin-left: 7%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+.contact-data {
+    font-size: 15px;
+    margin-left: 20%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.il-item {
+    display: inline-block;
+    padding: 5px;
+    /* font-size: 20px; */
+}
+
+.li1 {
+    margin-left: 10%;
+}
+
+.contact-form {
+    display: inline;
+    float: right;
+    width: 60%;
+}
+
+.input-block {
+    font-family: "Playwrite GB S", 'Playfair Display', serif;
+    display: block;
+    width: 90%;
+    padding: 1.5%;
+    margin: 4%;
+}
+
+.massage {
+    font-family: "Playwrite GB S", 'Playfair Display', serif;
+    display: block;
+    width: 90%;
+    height: 100px;
+    margin: 4%;
+    padding: 2%;
+}
+
+.submit-button {
+    font-family: "Playwrite GB S", 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 18px;
+    width: 90%;
+    margin: 4%;
+    height: 30px;
+    background-color: #425BB5;
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: red;
+    color: white;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 15px;
+    background-color: #f3f3f3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
