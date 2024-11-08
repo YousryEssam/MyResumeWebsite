@@ -173,7 +173,7 @@ header {
 }
 
 .expItem {
-    margin: 1.5%;
+    margin: 2%;
     text-align: center;
     border: #283747 solid 2px;
 
@@ -229,7 +229,7 @@ header {
 }
 /* Contact */
 .contact {
-    height: 700px;
+    height: 750px;
     background-color: #f3f3f3;
 }
 
@@ -242,7 +242,7 @@ header {
 .contact-title {
     font-size: 20px;
     font-family: "Playwrite GB S", 'Playfair Display', serif;
-    margin-left: 7%;
+    margin-left: 10%;
     margin-bottom: 3%;
     margin-top: 2%;
 }
@@ -250,8 +250,8 @@ header {
 .contact-data {
     font-size: 15px;
     margin-left: 20%;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 .il-item {
